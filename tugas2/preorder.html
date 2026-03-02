@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Logo Toko" width="100"> <h1>MamMee Bakery</h1>
+        <hr>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profil.html">Profil</a>
+            <a href="preorder.html">Pre-Order</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <h2>Pre-Order</h2>
+        <p>
+            To place a pre-order, please fill this form below:
+        </p>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="product">Pesanan:</label><br>
+            <section>
+                <input type="checkbox" name="product" placeholder="Pilih ">Cakes<br>
+                <input type="checkbox" name="product" placeholder="Pilih ">Big Cakes<br>
+            </section>
+            <section>
+                <input type="checkbox" name="product" placeholder="Pilih ">The half Cilinder Cake<br>
+                <input type="checkbox" name="product" placeholder="Pilih ">The halves with cheese<br>
+            </section>
+            
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+            
+            <input type="submit" value="Submit Pre-Order">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 MamMee Bakery. All rights reserved.</p>
+        <p>Made by Felicia Yeow</p>
+        <p>For PW1 Assignment: Tugas2</p>
+    </footer>
+</body>
+</html>
