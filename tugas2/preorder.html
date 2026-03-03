@@ -6,8 +6,31 @@
     <title>Contact</title>
 </head>
 <body>
+    <style>
+        body{
+            background-color: #f3f1f2;
+        }
+
+        .header_top {
+        display: flex;
+        flex-direction: row;
+        }
+
+        .header_top img{
+            border-right: 20px solid #f3f1f2;
+        }
+
+        .checkbox-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 kolom */
+        gap: 10px 50px; /* jarak baris & kolom */
+        max-width: 500px;
+        }
+    </style>
     <header>
+        <div class="header_top">
         <img src="images/logo.jpg" alt="Logo Toko" width="100"> <h1>MamMee Bakery</h1>
+        </div>
         <hr>
         <nav>
             <a href="index.html">Home</a>
@@ -19,29 +42,35 @@
     <main>
         <h2>Pre-Order</h2>
         <p>
-            To place a pre-order, please fill this form below:
+            To place a pre-order anad even cutom one, please fill this form below:
         </p>
         <form>
             <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+            <input type="text" name="name" required><br><br>
             
             <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <input type="email" name="email" required><br><br>
             
-            <label for="product">Pesanan:</label><br>
-            <section>
-                <input type="checkbox" name="product" placeholder="Pilih ">Cakes<br>
-                <input type="checkbox" name="product" placeholder="Pilih ">Big Cakes<br>
-            </section>
-            <section>
-                <input type="checkbox" name="product" placeholder="Pilih ">The half Cilinder Cake<br>
-                <input type="checkbox" name="product" placeholder="Pilih ">The halves with cheese<br>
-            </section>
-            
+            <label for="product">Toppings:</label><br>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="product" value="Cakes"> Extra Cheese</label>
+                <label><input type="checkbox" name="product" value="Big Cakes"> Chocolate Chips</label>
+                <label><input type="checkbox" name="product" value="Half Cilinder Cake"> sprinkles</label>
+                <label><input type="checkbox" name="product" value="Cheese Halves"> Nuts</label>
+            </div>
+            <br>
+            <br>
+            <label for="additional">Additional of Your Choosing:</label><br>
+            <select name="additional">
+                <option value="none" selected>None</option>
+                <option value="candle">Candle</option>
+                <option value="coupon">Coupon</option>
+            </select>
+            <br><br>
             <label for="quantity">Quantity:</label><br>
-            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+            <input type="number" name="quantity" min="1" required><br><br>
             
-            <input type="submit" value="Submit Pre-Order">
+            <input type="submit" value="Submit">
         </form>
     </main>
     <footer>
