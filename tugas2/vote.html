@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #f3f1f2;
+        }
+
+        .header_top {
+        display: flex;
+        flex-direction: row;
+        }
+
+        .header_top img{
+            border-right: 20px solid #f3f1f2;
+        }
+
+        nav{
+            background-color: #f47747;
+            overflow: hidden;
+        }
+
+        nav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+        }
+
+        nav a:hover{
+            color: #f47747;
+            background-color: #f3f1f2;
+            transition: all 0.3s ease-in-out;
+        }
+
+        main{
+            text-align: center;
+        }
+
+        .form-position {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+        }
+
+        .checkbox-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 kolom */
+        gap: 10px 50px; /* jarak baris & kolom */
+        max-width: 500px;
+        }
+    </style>
+    <header>
+        <div class="header_top">
+        <img src="images/logo.jpg" alt="Logo Toko" width="100"> <h1>MamMee Bakery</h1>
+        </div>
+        <hr>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profil.html">Profil</a>
+            <a href="vote.html">Vote</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <h2>Vote</h2>
+        <p>
+            Silakan vote untuk produk yang Anda sukai!
+        </p>
+        <div class="form-position">
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" required><br><br>
+                
+                <label for="product">Alasan:</label><br>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="product" value="Murah"> Murah</label>
+                    <label><input type="checkbox" name="product" value="Rasanya"> Rasanya</label>
+                    <label><input type="checkbox" name="product" value="Penampilannya"> Penampilannya</label>
+                    <label><input type="checkbox" name="product" value="Aroma"> Aroma</label>
+                    <label><input type="checkbox" name="product" value="Varian"> Varian</label>
+                    <label><input type="checkbox" name="product" value="Tekstur"> Tekstur</label>
+                </div>
+                <br>
+                <br>
+                <label for="additional">Target Kesukaan:</label><br>
+                <select name="produk" required>
+                    <option value="Baked Goods" selected> Roti Asin & Manis (Baked Goods)
+                    </option>
+                    <option value="Kue dan Snack">Kue, Cake & Puding</option>
+                    <option value="Oleh-oleh">Kue Kering</option>
+                    <option value="Minuman">Coffee & Non-Coffee</option>
+                </select>
+                <br><br>
+                <label for="Saran">Saran:</label><br>
+                <input type="text" name="Saran" required><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 MamMee Bakery. All rights reserved.</p>
+        <p>Made by Felicia Yeow</p>
+        <p>For PW1 Assignment: Tugas2</p>
+    </footer>
+</body>
+</html>
