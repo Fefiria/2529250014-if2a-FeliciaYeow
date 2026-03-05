@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #f47747;
+    --secondary-color: #f3f1f2;
+
+    --font-family: 'Google Sans', sans-serif;
+    --header-font: 'Fjalla One', sans-serif;
+    --body-font: 'Sour Gummy', cursive;
+}
+
+h1{
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2, h5{
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400 ;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
