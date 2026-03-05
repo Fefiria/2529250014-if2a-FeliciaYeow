@@ -9,11 +9,13 @@
     <style>
         body{
             background-color: #f3f1f2;
+            margin: 0;
         }
         
         .header_top {
-        display: flex;
-        flex-direction: row;
+            display: flex;
+            flex-direction: row;
+            top: 0;
         }
 
         .header_top img{
@@ -25,10 +27,17 @@
             overflow: hidden;
         }
 
+        main{
+            margin: 10px;
+        }
+
         nav a{
             float: left;
+            display: block;
             color: white;
             text-align: center;
+            position: sticky;
+            top: 0;
             padding: 14px 16px;
         }
 
@@ -36,6 +45,19 @@
             color: #f47747;
             background-color: #f3f1f2;
             transition: all 0.3s ease-in-out;
+        }
+
+        .header_top img{
+            border-right: 20px solid #f3f1f2;
+        }
+
+        footer{
+            background-color: #f47747;
+            color: white;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            padding: 10px;
         }
 
     </style>
