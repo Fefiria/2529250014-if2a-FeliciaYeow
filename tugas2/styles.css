@@ -17,7 +17,7 @@ h1{
     color: var(--primary-color);
 }
 
-h2, h5{
+h2{
     font-family: "Sour Gummy", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400 ;
