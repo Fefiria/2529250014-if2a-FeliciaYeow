@@ -30,3 +30,13 @@ h2, h5{
 a{
     cursor: pointer;
 }
+
+@view-transition fade-away{
+    .fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .fade-out {
+        animation: fadeOut 0.5s ease-in-out;
+    }
+}
